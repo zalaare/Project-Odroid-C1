@@ -1,0 +1,12 @@
+diff -Nur a/include/configs/hardkernel/odroidc.h b/include/configs/hardkernel/odroidc.h
+--- a/include/configs/hardkernel/odroidc.h	2015-01-16 02:18:21.000000000 +0000
++++ b/include/configs/hardkernel/odroidc.h	2016-03-28 19:10:44.144724243 +0000
+@@ -122,7 +122,7 @@
+         "bootargs=root=" MK_STR(CONFIG_DEFAULT_ROOT) " rw " \
+                 "console=" CONFIG_CONSOLE_PROTOCOL " no_console_suspend\0" \
+         "bootcmd="\
+-                "cfgload;" \
++                "bootini;" \
+                 "setenv bootargs root=" MK_STR(CONFIG_DEFAULT_ROOT) " rw " \
+                         "console=" CONFIG_CONSOLE_PROTOCOL " no_console_suspend " \
+                         "vdaccfg=${vdac_config} " \
