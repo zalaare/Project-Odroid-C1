@@ -32,6 +32,7 @@ case "`uname -m`" in
     PKG_SOURCE_DIR="gcc-linaro-arm-none-eabi-$PKG_VERSION.09_linux"
     ;;
 esac
+PKG_SOURCE_NAME="$PKG_SOURCE_DIR.tar.xz"
 PKG_HOST_DEPENDS_TARGET="toolchain"
 PKG_PRIORITY="optional"
 PKG_SECTION="multimedia"
